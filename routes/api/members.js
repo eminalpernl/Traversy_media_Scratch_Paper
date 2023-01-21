@@ -21,6 +21,8 @@ if (found) {
     res.status(400).json({ msg: `No member with this ID of ${req.params.id}` })
 }})
 
+// Creating new member
+
 // we've added POST routing to the members.js file (https://youtu.be/L72fhGm1tfE?t=2497)
 
 // Create Member // this gives us what we add in the postman
@@ -51,6 +53,7 @@ router.post('/',(req, res)=>{
 
     members.push(newMember);
     res.json(members);
+    //res.redirect('/');
 });
 
 // update member(https://youtu.be/L72fhGm1tfE?t=3033)
